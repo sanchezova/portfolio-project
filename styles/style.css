@@ -76,6 +76,7 @@ footer {
 .project-image-weather {
   max-width: 100%;
 }
-.icons {
-
+.icon {
+font-size:40px;
+color:white;
 }
