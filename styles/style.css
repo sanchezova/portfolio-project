@@ -1,3 +1,22 @@
+@media (max-width: 576px) {
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
+  
+ }
+ .about-me {
+    text-align:center;
+ }
+ .about-me-paragraph {
+    text-align:center;
+ }
+}
+
 body {
   background-image: url("/images/unsplash.jpg");
   background-size: cover;
@@ -5,8 +24,7 @@ body {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
@@ -21,31 +39,43 @@ h2 {
 h3 {
   font-size: 30px;
 }
-
 p {
   font-family: "Inconsolata", monospace;
-  font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 2;
+  font-weight:700;
+}
+.about-me-paragraph {
+  font-weight: 700;
+  font-size: 24px;
   line-height: 2;
 }
 
 footer {
-  font-size: 14px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
 }
 .fixed-top {
   font-family: "Inconsolata", monospace;
   font-size: 22px;
+  font-weight:700;
+  
+}
+.nav-item a.nav-link {
+ color:black;
 }
 .bar-name {
   color: #9f2c10;
   font-size: 26px;
 }
-.nav-link.active {
-  color: #9f2c10;
+.nav-item a.nav-link.active {
+ color: #9f2c10;
 }
 
+.description {
+  padding-bottom: 100px;
+}
 .hero {
   text-align: center;
   margin-bottom: 60px;
@@ -56,6 +86,7 @@ footer {
 .my-photo {
   max-width: 350px;
 }
+
 .contact-platforms {
   text-align: center;
 }
@@ -69,6 +100,7 @@ footer {
 }
 .project-paragraph {
   font-weight: 700;
+  font-size: 24px;
 }
 .project-image-F45 {
   max-width: 300px;
@@ -76,7 +108,11 @@ footer {
 .project-image-weather {
   max-width: 100%;
 }
-.icon {
-font-size:40px;
-color:white;
+
+
+.icons {
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
