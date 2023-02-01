@@ -67,7 +67,7 @@ footer {
 }
 .bar-name {
   color: #9f2c10;
-  font-size: 26px;
+  font-size: 30px;
 }
 .nav-item a.nav-link.active {
  color: #9f2c10;
@@ -113,6 +113,5 @@ footer {
 .icons {
   font-size: 60px;
   color: white;
-  display: flex;
-  justify-content: center;
+  
 }
