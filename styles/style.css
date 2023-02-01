@@ -1,29 +1,34 @@
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   h1 {
     text-align: center;
     font-size: 48px;
-    
   }
   h2 {
     text-align: center;
     font-size: 36px;
-  
- }
- .about-me {
-    text-align:center;
- }
- .about-me-paragraph {
-    text-align:center;
- }
- .F45-project {
-    text-align:center;
- }
- .project-paragraph {
-    text-align:center;
- }
- .weather-app-project {
-    text-align:center;
- }
+  }
+  .about-me {
+    text-align: center;
+  }
+  .about-me-paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .F45-project {
+    text-align: center;
+  }
+
+  .project-paragraph {
+    text-align: center;
+  }
+  .weather-app-project {
+    text-align: center;
+  }
+  .project-image-weather {
+    margin-bottom: 40px;
+  }
 }
 
 body {
@@ -52,7 +57,7 @@ p {
   font-family: "Inconsolata", monospace;
   font-size: 24px;
   line-height: 2;
-  font-weight:700;
+  font-weight: 700;
 }
 .about-me-paragraph {
   font-weight: 700;
@@ -68,18 +73,19 @@ footer {
 .fixed-top {
   font-family: "Inconsolata", monospace;
   font-size: 22px;
-  font-weight:700;
-  
+  font-weight: 700;
 }
 .nav-item a.nav-link {
- color:black;
+  color: black;
+  opacity: 0.7;
+}
+.nav-item a.nav-link.active {
+  color: #9f2c10;
 }
 .bar-name {
   color: #9f2c10;
   font-size: 30px;
-}
-.nav-item a.nav-link.active {
- color: #9f2c10;
+  opacity: 0.7;
 }
 
 .description {
@@ -93,7 +99,7 @@ footer {
   background-color: white;
 }
 .my-photo {
-  max-width: 350px;
+  max-width: 100%;
 }
 
 .contact-platforms {
@@ -107,20 +113,28 @@ footer {
 .contact-platforms i:hover {
   color: black;
 }
+
 .project-paragraph {
   font-weight: 700;
   font-size: 24px;
 }
-.project-image-F45 {
-  max-width: 300px;
+.F45-project-picture {
+  max-width:100%;
+  transition: all 200ms ease-in-out;
 }
-.project-image-weather {
-  max-width: 100%;
+.F45-project-picture:hover {
+  transform: scale(1.1);
 }
 
+.weather-picture {
+  max-width:100%;
+  transition: all 200ms ease-in-out;
+}
+.weather-project-picture:hover {
+  transform: scale(1.1);
+}
 
 .icons {
   font-size: 60px;
   color: white;
-  
 }
