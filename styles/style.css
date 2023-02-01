@@ -31,6 +31,13 @@
   }
 }
 
+:root {
+  --primary-color: black;
+  --secondary-color: #9f2c10;
+  --icons-color: white;
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Inconsolata", monospace;
+}
 body {
   background-image: url("/images/unsplash.jpg");
   background-size: cover;
@@ -39,7 +46,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 h1 {
@@ -54,10 +61,15 @@ h3 {
   font-size: 30px;
 }
 p {
-  font-family: "Inconsolata", monospace;
+  font-family: var(--paragraph-font);
   font-size: 24px;
   line-height: 2;
   font-weight: 700;
+}
+footer {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--paragraph-font);
 }
 .about-me-paragraph {
   font-weight: 700;
@@ -65,39 +77,32 @@ p {
   line-height: 2;
 }
 
-footer {
-  font-size: 17px;
-  font-weight: 700;
-  font-family: "Inconsolata", monospace;
-}
 .fixed-top {
-  font-family: "Inconsolata", monospace;
+  font-family: var(--paragraph-font);
   font-size: 22px;
   font-weight: 700;
 }
 .nav-item a.nav-link {
-  color: black;
+  color: var(--primary-color);
   opacity: 0.7;
 }
 .nav-item a.nav-link.active {
-  color: #9f2c10;
+  color: var(--secondary-color);
 }
 .bar-name {
-  color: #9f2c10;
+  color: var(--secondary-color);
   font-size: 30px;
   opacity: 0.7;
 }
 
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .description {
   padding-bottom: 100px;
 }
-.hero {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.bg-light {
-  background-color: white;
-}
+
 .my-photo {
   max-width: 100%;
 }
@@ -106,20 +111,20 @@ footer {
   text-align: center;
 }
 .contact-platforms i {
-  color: white;
+  color: var(--icons-color);
   font-size: 30px;
   margin: 20px;
 }
 .contact-platforms i:hover {
-  color: black;
+  color: var(--primary-color);
 }
 
 .project-paragraph {
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
 }
 .F45-project-picture {
-  max-width:100%;
+  max-width: 100%;
   transition: all 200ms ease-in-out;
 }
 .F45-project-picture:hover {
@@ -127,7 +132,7 @@ footer {
 }
 
 .weather-picture {
-  max-width:100%;
+  max-width: 100%;
   transition: all 200ms ease-in-out;
 }
 .weather-project-picture:hover {
@@ -136,5 +141,5 @@ footer {
 
 .icons {
   font-size: 60px;
-  color: white;
+  color:var(--icons-color);
 }
