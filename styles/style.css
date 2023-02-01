@@ -7,19 +7,22 @@
     text-align: center;
     font-size: 36px;
   }
-  .about-me {
+ 
+}
+
+@media (max-width: 576px) {
+   .my-photo {
+    display:none;
+   }
+    .about-me {
     text-align: center;
   }
   .about-me-paragraph {
     text-align: center;
   }
-}
-
-@media (max-width: 576px) {
   .F45-project {
     text-align: center;
   }
-
   .project-paragraph {
     text-align: center;
   }
@@ -47,7 +50,7 @@ h1,
 h2,
 h3 {
   font-family: var(--heading-font);
-  font-weight: bold;
+  font-weight:700;
 }
 h1 {
   font-size: 60px;
@@ -84,7 +87,7 @@ footer {
 }
 .nav-item a.nav-link {
   color: var(--primary-color);
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .nav-item a.nav-link.active {
   color: var(--secondary-color);
@@ -92,19 +95,19 @@ footer {
 .bar-name {
   color: var(--secondary-color);
   font-size: 30px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .hero {
   text-align: center;
   margin-bottom: 50px;
 }
-.description {
+.about-section {
   padding-bottom: 100px;
 }
 
 .my-photo {
-  max-width: 100%;
+  width:500px;
 }
 
 .contact-platforms {
