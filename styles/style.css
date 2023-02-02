@@ -22,7 +22,9 @@
   .F45-project h3 {
     text-align: center;
   }
- 
+  .F45-project-picture {
+    text-align: center;
+  }
   .weather-app-project h3 {
     text-align: center;
   }
@@ -72,19 +74,19 @@ footer {
   font-size: 22px;
   font-weight: 700;
 }
-.nav-item a.nav-link {
-  color: var(--primary-color);
-  opacity: 0.6;
-}
-.nav-item a.nav-link.active {
-  color: var(--secondary-color);
-}
-.bar-name {
+
+.bar-name-initials {
   color: var(--secondary-color);
   font-size: 30px;
   opacity: 0.6;
 }
-
+.active {
+    color:var(--secondary-color) !important;
+    opacity:0.6;
+}
+.nav-item {
+    padding:0 15px;
+}
 .hero {
   text-align: center;
   margin-bottom: 50px;
@@ -93,7 +95,7 @@ footer {
   padding-bottom: 100px;
 }
 
-.my-photo {
+.profile-photo {
   width: 500px;
 }
 .content-paragraph {
@@ -114,18 +116,16 @@ footer {
   color: var(--primary-color);
 }
 
-.F45-project-picture {
-  /*max-width: 100%;*/
-  transition: all 200ms ease-in-out;
+.row {
+  display: flex;
+  justify-content: center;
 }
-.F45-project-picture:hover {
-  transform: scale(1.1);
+.F45-project-picture,
+.weather-picture {
+  transition: all 200ms ease-in-out;
 }
 
-.weather-picture {
-  /*max-width: 100%;*/
-  transition: all 200ms ease-in-out;
-}
+.F45-project-picture:hover,
 .weather-project-picture:hover {
   transform: scale(1.1);
 }
@@ -133,8 +133,4 @@ footer {
 .icons {
   font-size: 60px;
   color: var(--icons-color);
-}
-.row {
-    display:flex;
-    justify-content:center;
 }
