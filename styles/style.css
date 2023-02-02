@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   h1 {
     text-align: center;
     font-size: 48px;
@@ -7,30 +7,27 @@
     text-align: center;
     font-size: 36px;
   }
- 
 }
 
 @media (max-width: 576px) {
-   .my-photo {
-    display:none;
-   }
-    .about-me {
+  .profile-photo {
+    display: none;
+  }
+  h3 {
     text-align: center;
   }
-  .about-me-paragraph {
+  .content-paragraph {
     text-align: center;
   }
-  .F45-project {
+  .F45-project h3 {
     text-align: center;
   }
-  .project-paragraph {
+ 
+  .weather-app-project h3 {
     text-align: center;
   }
-  .weather-app-project {
-    text-align: center;
-  }
-  .project-image-weather {
-    margin-bottom: 40px;
+  .weather-project-picture {
+    margin-bottom: 50px;
   }
 }
 
@@ -39,7 +36,7 @@
   --secondary-color: #9f2c10;
   --icons-color: white;
   --heading-font: "Playfair Display", serif;
-  --paragraph-font: "Inconsolata", monospace;
+  --content-font: "Inconsolata", monospace;
 }
 body {
   background-image: url("/images/unsplash.jpg");
@@ -50,7 +47,7 @@ h1,
 h2,
 h3 {
   font-family: var(--heading-font);
-  font-weight:700;
+  font-weight: 700;
 }
 h1 {
   font-size: 60px;
@@ -63,25 +60,15 @@ h2 {
 h3 {
   font-size: 30px;
 }
-p {
-  font-family: var(--paragraph-font);
-  font-size: 24px;
-  line-height: 2;
-  font-weight: 700;
-}
+
 footer {
   font-size: 17px;
   font-weight: 700;
-  font-family: var(--paragraph-font);
-}
-.about-me-paragraph {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 2;
+  font-family: var(--content-font);
 }
 
 .fixed-top {
-  font-family: var(--paragraph-font);
+  font-family: var(--content-font);
   font-size: 22px;
   font-weight: 700;
 }
@@ -107,9 +94,14 @@ footer {
 }
 
 .my-photo {
-  width:500px;
+  width: 500px;
 }
-
+.content-paragraph {
+  font-family: var(--content-font);
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 700;
+}
 .contact-platforms {
   text-align: center;
 }
@@ -122,12 +114,8 @@ footer {
   color: var(--primary-color);
 }
 
-.project-paragraph {
-  font-size: 24px;
-  font-weight: 700;
-}
 .F45-project-picture {
-  max-width: 100%;
+  /*max-width: 100%;*/
   transition: all 200ms ease-in-out;
 }
 .F45-project-picture:hover {
@@ -135,7 +123,7 @@ footer {
 }
 
 .weather-picture {
-  max-width: 100%;
+  /*max-width: 100%;*/
   transition: all 200ms ease-in-out;
 }
 .weather-project-picture:hover {
@@ -144,5 +132,9 @@ footer {
 
 .icons {
   font-size: 60px;
-  color:var(--icons-color);
+  color: var(--icons-color);
+}
+.row {
+    display:flex;
+    justify-content:center;
 }
