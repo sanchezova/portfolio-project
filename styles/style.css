@@ -88,12 +88,12 @@ h3 {
 }
 .hero {
   text-align: center;
-  margin-bottom: 50px;
   border: 1px solid var(--border-color);
   max-width: 800px;
   margin: 0 auto;
   padding: 10px 0 30px 0;
-  margin-bottom: 100px;
+  margin-bottom:100px;
+ 
 }
 
 .profile-photo {
@@ -109,7 +109,7 @@ h3 {
 .about-section.container {
   border: 1px solid var(--border-color);
   padding: 10px 40px 40px 40px;
-  margin-bottom: 100px;
+  margin-bottom:100px;
 }
 .contact-section {
   border: 1px solid var(--border-color);
@@ -137,22 +137,59 @@ h3 {
   font-weight: 700;
   font-family: var(--content-font);
 }
-
-.row {
-  display: flex;
-  justify-content: center;
+.github-portfolio-link {
+color:white;
+text-decoration:none;
 }
-.F45-project-picture,
-.weather-picture {
+.github-portfolio-link:hover {
+    color:var(--secondary-color);
+    opacity:0.7;
+}
+.projects-heading {
+    border:1px solid var(--border-color);
+    max-width:800px;
+    margin:0 auto;
+    padding:15px 0 15px 0;
+    margin-bottom:100px;
+    
+}
+.projects-container {
+    border:1px solid var(--border-color);
+    margin-bottom:30px;
+    padding:10px 0 20px 0;
+
+}
+.F45-project-image,
+.weather-project-image {
   transition: all 200ms ease-in-out;
 }
 
-.F45-project-picture:hover,
-.weather-project-picture:hover {
+.F45-project-image:hover,
+.weather-project-image:hover {
   transform: scale(1.1);
 }
 
-.icons {
+.interests-heading {
+    border:1px solid var(--border-color);
+    max-width:800px;
+    margin:0 auto;
+    padding:15px 0 15px 0;
+    margin-bottom:100px;
+}
+.content-paragraph.interests {
+    border:1px solid var(--border-color);
+    padding:30px;
+    max-width:1200px;
+    margin:0 auto;
+
+}
+.icons i {
   font-size: 60px;
   color: var(--icons-color);
+  border:1px solid var(--border-color);
+  padding:15px;
+  transition: all 100ms ease-in-out;
+}
+.icons i:hover {
+   color: var(--primary-color); 
 }
