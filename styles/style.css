@@ -1,40 +1,3 @@
-@media (max-width: 780px) {
-  h1 {
-    font-size: 44px;
-  }
-  h2 {
-    font-size: 36px;
-  }
- h3 {
-    font-size:24px;
- }
-}
-
-@media (max-width: 576px) {
-  .profile-photo {
-    display: none;
-  }
-
-  h3 {
-    text-align: center;
-  }
-  .content-paragraph {
-    text-align: center;
-  }
-  .F45-project h3 {
-    text-align: center;
-  }
-  .F45-project-picture {
-    text-align: center;
-  }
-  .weather-app-project h3 {
-    text-align: center;
-  }
-  .weather-project-picture {
-    margin-bottom: 50px;
-  }
-}
-
 :root {
   --primary-color: black;
   --secondary-color: #9f2c10;
@@ -60,10 +23,10 @@ h1 {
   margin: 0;
 }
 h2 {
-  font-size: 34px;
+  font-size: 36px;
 }
 h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .fixed-top {
@@ -93,8 +56,7 @@ h3 {
   max-width: 800px;
   margin: 0 auto;
   padding: 10px 0 30px 0;
-  margin-bottom:100px;
- 
+  margin-bottom: 100px;
 }
 
 .profile-photo {
@@ -103,14 +65,14 @@ h3 {
 
 .content-paragraph {
   font-family: var(--content-font);
-  font-size: 24px;
+  font-size: 22px;
   line-height: 2;
   font-weight: 700;
 }
 .about-section.container {
   border: 1px solid var(--border-color);
   padding: 10px 40px 40px 40px;
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
 .contact-section {
   border: 1px solid var(--border-color);
@@ -118,9 +80,7 @@ h3 {
   margin: 0 auto;
   padding: 20px 0 15px 0;
 }
-.contact-platforms {
-  text-align: center;
-}
+
 .contact-platforms i {
   color: var(--icons-color);
   font-size: 30px;
@@ -139,29 +99,29 @@ h3 {
   font-family: var(--content-font);
 }
 .github-portfolio-link {
-color:white;
-text-decoration:none;
+  color: white;
+  text-decoration: none;
 }
 .github-portfolio-link:hover {
-    color:var(--secondary-color);
-    opacity:0.7;
+  color: var(--secondary-color);
+  opacity: 0.7;
 }
 .projects-heading {
-    border:1px solid var(--border-color);
-    max-width:800px;
-    margin:0 auto;
-    padding:15px 0 15px 0;
-    margin-bottom:100px;
-    
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  margin-bottom: 100px;
 }
 .projects-container {
-    border:1px solid var(--border-color);
-    margin-bottom:30px;
-    padding:10px 0 20px 0;
-
+  border: 1px solid var(--border-color);
+  margin-bottom: 30px;
+  padding: 20px 0 50px 0;
 }
 .F45-project-image,
 .weather-project-image {
+  border: 1px solid var(--border-color);
+  padding: 15px;
   transition: all 200ms ease-in-out;
 }
 
@@ -171,26 +131,86 @@ text-decoration:none;
 }
 
 .interests-heading {
-    border:1px solid var(--border-color);
-    max-width:800px;
-    margin:0 auto;
-    padding:15px 0 15px 0;
-    margin-bottom:100px;
+  border: 1px solid var(--border-color);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  margin-bottom: 100px;
 }
 .content-paragraph.interests {
-    border:1px solid var(--border-color);
-    padding:30px;
-    max-width:1200px;
-    margin:0 auto;
-
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.icons i {
+.col-sm-1 {
+    margin:20px;
+}
+.interests-icons i {
   font-size: 60px;
   color: var(--icons-color);
-  border:1px solid var(--border-color);
-  padding:15px;
+  border: 1px solid var(--border-color);
+  padding: 15px;
   transition: all 100ms ease-in-out;
+  margin:10px;
 }
-.icons i:hover {
-   color: var(--primary-color); 
+.interests-icons i:hover {
+  color: var(--primary-color);
 }
+@media (max-width: 760px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .content-paragraph {
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer-paragraph {
+    font-size: 14px;
+  }
+  .interests-heading {
+    max-width: 360px;
+  }
+  .content-paragraph.interests {
+    max-width: 360px;
+  }
+  .interests-content {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-photo {
+    display: none;
+  }
+  .hero {
+    margin-bottom: 50px;
+  }
+  .about-section.container {
+    margin-bottom: 50px;
+  }
+  .projects-heading {
+    margin-bottom: 50px;
+  }
+  .F45-project-image {
+    border: 0;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .weather-project-image {
+    border: 0;
+  }
+  .interests-heading {
+    margin-bottom: 50px;
+  }
+}
+
